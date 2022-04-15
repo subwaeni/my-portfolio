@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Grand School</title>
+</head>
+
+<body>
+  <!-- header -->
+    <div class="header">
+    <h1><span class="yellow">GRAD</span> SCHOOL</h1>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="#home">HOME</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="#about">ABOUT US &#x21e9;</a>
+            <div class="dropdown-content">
+              <a href="#">WHO WE ARE?</a>
+              <a href="#">WHAT WE DO?</a>
+              <a href="#">HOW IT WORKS?</a>
+              <a href="#">EXTERNAL URL</a>
+            </div>
+          </div>
+        <li><a href="#courses">COURSES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#external">EXTERNAL</a></li>
+      </ul>
+    </nav>
+    <img src="./images/menu.png" height="30px" class="menu-icon" onclick="menutoggle()">
+  </div>
+
+  
+  <div class="main-container" id="home">
+    <video src="./images/course-video.mp4" id="bg-video" autoplay muted loop></video>
+    <div class="hero">
+      <div class="video-overlay">
+        <div class="caption">
+          <h5>GRADUATE SCHOOL OF MANAGEMENT</h5>
+          <h1><span class="yellow">YOUR </span>CLASSROOM</h1>
+          <button class="btn">DISCOVER MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-under">
+      <div class="col-3">
+        <div class="dropup">
+          <h3><i class="fas fa-pencil-alt"></i>
+            ALL COURSES</h3>
+          <div class="dropup-content">
+            <P>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec
+              maximus
+              elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.
+            </P>
+            <a href="">DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="dropup">
+          <h3> <i class="fas fa-graduation-cap"></i>
+            ALL COURSES</h3>
+          <div class="dropup-content">
+            <P>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec
+              maximus
+              elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.
+            </P>
+            <a href="">DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-3">
+        <div class="dropup">
+          <h3> <i class="fas fa-book"></i>
+            ALL COURSES</h3>
+          <div class="dropup-content">
+            <P>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec
+              maximus
+              elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.
+            </P>
+            <a href="">DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- about us -->
+  <div class="container intro" id="about">
+    <div class="sub-title">
+      <hr>
+      <h4>Why choose Grad School?</h4>
+    </div>
+    <div class="tabs">
+      <div class="tab-box col-3">
+        <h5>BEST EDUCATION</h5>
+        <i class="fas fa-square"></i>
+      </div>
+
+      <div class="tab-box col-3">
+        <h5>BEST EDUCATION</h5>
+        <i class="fas fa-square"></i>
+      </div>
+
+      <div class="tab-box col-3">
+        <h5>BEST EDUCATION</h5>
+        <i class="fas fa-square"></i>
+      </div>
+
+    </div>
+    <div class="intro-box">
+      <div class="col-2">
+        <img src="./images/choose-us-image-01.png" alt="">
+      </div>
+      <div class="col-2">
+        <div class="intro-title-box">
+          <h2>Best Education</h2>
+          <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for
+            educational or commercial purposes. You may want to make <a href="">a little donation </a>to TemplateMo.
+            Please
+            tell your friends
+            about us. Thank you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- coming soon -->
+  <div class="coming-soon">
+    <div class="container coming-soon-container">
+      <div class="col-2 coming-soon-box">
+        <h2>Take any online course and win $326 for your next class</h2>
+        <div class="time-box">
+          <div class="time day">
+            <h1>154</h1>
+            <h4>DAYS</h4>
+          </div>
+
+          <div class="time hours">
+            <h1>12</h1>
+            <h4>HOURS</h4>
+          </div>
+
+          <div class="time minutes">
+            <h1>21</h1>
+            <h4>MINUTES</h4>
+          </div>
+
+          <div class="time seconds">
+            <h1>58</h1>
+            <h4>SECONDS</h4>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-2 form">
+        <!-- <div class="form"> -->
+        <p>Register your free account and get immediate access to online courses</p>
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Your Phone Number">
+          <button class="btn">GET IT NOW</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- course -->
+  <div class="container course-container" id="courses">
+    <div class="sub-title">
+      <hr>
+      <h4>Choose Your Course</h4>
+    </div>
+    <div class="course">
+      <div class="col-5">
+        <div class="course-box">
+          <img src="./images/courses-01.jpg" alt="">
+          <div class="course-text-box">
+            <h4>WEB DEVELOPER</h4>
+            <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+          </div>
+          <div class="author">
+            <img src="./images/author-01.png" alt="">
+            <p>play &#10148;</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="course-box">
+          <img src="./images/courses-01.jpg" alt="">
+          <div class="course-text-box">
+            <h4>WEB DEVELOPER</h4>
+            <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+          </div>
+          <div class="author">
+            <img src="./images/author-01.png" alt="">
+            <p>play &#10148;</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="course-box">
+          <img src="./images/courses-01.jpg" alt="">
+          <div class="course-text-box">
+            <h4>WEB DEVELOPER</h4>
+            <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+          </div>
+          <div class="author">
+            <img src="./images/author-01.png" alt="">
+            <p>play &#10148;</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="course-box">
+          <img src="./images/courses-01.jpg" alt="">
+          <div class="course-text-box">
+            <h4>WEB DEVELOPER</h4>
+            <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+          </div>
+          <div class="author">
+            <img src="./images/author-01.png" alt="">
+            <p>play &#10148;</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="course-box">
+          <img src="./images/courses-01.jpg" alt="">
+          <div class="course-text-box">
+            <h4>WEB DEVELOPER</h4>
+            <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+          </div>
+          <div class="author">
+            <img src="./images/author-01.png" alt="">
+            <p>play &#10148;</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- about-->
+  <div class="video">
+    <div class="container video-container">
+      <div class="col-2 video-box">
+        <h4>OUR PRESENTATION IS FOR YOU</h4>
+        <h2>Watch the video to learn more <span class="yellow">about Grad School</span></h2>
+        <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you
+          can
+          use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may
+          contact
+          <a href="">TemplateMo</a> for details.
+        </p>
+        <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.
+        </p>
+        <button class="btn">EXTERNAL URL</button>
+      </div>
+      <div class="col-2 small-video">
+        <img src="./images/main-thumb.png">
+        <div class="video-title">
+          <h2>POWER HTML TEMPLATE</h2>
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- contact -->
+  <div class="container contact-container" id="contact">
+    <div class="sub-title">
+      <hr>
+      <h4>Let’s Keep In Touch</h4>
+    </div>
+    <div class="contact-box">
+      <div class="col-2 contact-form form">
+        <form action="">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea name="" id="" cols="50" rows="10" placeholder="Your message ..."></textarea>
+          <button class="btn">SEND MESSAGE NOW</button>
+        </form>
+      </div>
+      <div class="col-2 map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51677.50731038241!2d97.0149991091653!3d20.787007594501077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ce86381a88cc0f%3A0xf53083c4263eb24b!2sTaunggyi%2C%20Myanmar%20(Burma)!5e1!3m2!1sen!2sus!4v1627701168122!5m2!1sen!2sus"
+          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <div class="footer">
+    <hr>
+    <br>
+    <p>&#169; COPYRIGHT 2020 BY GRAD SCHOOL | DESIGN:<a href=""> <span class="yellow">SU BWAY</span></a></p>
+  </div>
+
+  <script src="https://kit.fontawesome.com/663b9b744a.js" crossorigin="anonymous"></script>
+
+    <!-- script form menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "500px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+</body>
+
+</html>
