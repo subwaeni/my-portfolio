@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <title>Su Bwae Veggie</title>
+</head>
+
+<body>
+
+  <section class="header" id="home">
+    <div class="menu">
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu Cart</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <i class="fas fa-bars menu-icon" onclick="menutoggle()"> Menu</i>
+      <!-- <i class="fas fa-paw menu-icon" onclick="menutoggle()"></i> -->
+    </div>
+  </section>
+  <hero>
+    <section class="hero" >
+      <div class="container">
+        <!-- <div class="row"> -->
+        <div class="hero-text">
+          <h1 id="words">Veggie gram fava bean
+            leek dandelion silver beet
+            eggplant bush tomato</h1>
+          <img class="divider" src="./img/divider.svg">
+        </div>
+      </div>
+    </section>
+  </hero>
+  <!-- category- icons -->
+  <section class="category-icons">
+    <div class="container">
+      <div class="yellow-container">
+        <div class="col-3">
+          <img src="./img/icon-vege.svg" alt="">
+          <h3>TURNIP GREENS</h2>
+            <p>Turnip greens yarrow ricebean
+              rutabaga endive cauliflower sea
+              lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage.</p>
+        </div>
+        <div class="col-3">
+          <img src="./img/icon-coffee.svg" alt="">
+          <h3>BEETROOT WATER</h2>
+            <p>Nori grape silver beet broccoli kombu beet greens
+              fava bean potato quandong celery. Bunya nuts black-eyed
+              pea prairie turnip leek.</p>
+        </div>
+        <div class="col-3">
+          <img src="./img/icon-sweet.svg" alt="">
+          <h3>GET SOCIAL</h2>
+            <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean
+              mustard tigernut jícama.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- special -->
+  <section class="special" id="specials">
+    <div class="container">
+      <div class="row">
+        <div class="special-header">
+          <h1>This month specials</h1>
+          <img class="divider" src="./img/divider.svg" alt="">
+        </div>
+        <div class="special-col">
+          <div class="special-small-col">
+            <img src="./img/special-1.png" alt="">
+            <div class="special-text">
+              <h4>Greens fava</h4>
+              <p>Nori grape silver beet
+                broccoli kombu beet greens fava</p>
+              <span id="prices">19$</span>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="special-small-col rev">
+            <img src="./img/special-2.png" alt="">
+            <div class="special-text">
+              <h4>Greens fava</h4>
+              <p>Nori grape silver beet
+                broccoli kombu beet greens fava</p>
+              <span id="prices">19$</span>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="special-small-col">
+            <img src="./img/special-3.png" alt="">
+            <div class="special-text">
+              <h4>Greens fava</h4>
+              <p>Nori grape silver beet
+                broccoli kombu beet greens fava</p>
+              <span id="prices">19$</span>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <div class="special-col">
+          <div class="special-small-col">
+            <div class="special-text">
+              <h4>Greens fava</h4>
+              <p>Nori grape silver beet
+                broccoli kombu beet greens fava</p>
+              <span id="prices">19$</span>
+            </div>
+            <img src="./img/special-4.png" alt="">
+            <div class="overlay"></div>
+          </div>
+          <div class="special-small-col rev">
+            <div class="special-text">
+              <h4>Greens fava</h4>
+              <p>Nori grape silver beet
+                broccoli kombu beet greens fava</p>
+              <span id="prices">19$</span>
+            </div>
+            <img src="./img/special-5.png" alt="">
+            <div class="overlay"></div>
+          </div>
+          <div class="special-small-col">
+            <div class="special-text">
+              <h4>Greens fava</h4>
+              <p>Nori grape silver beet
+                broccoli kombu beet greens fava</p>
+              <span id="prices">19$</span>
+            </div>
+            <img src="./img/special-6.png" alt="">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about-us -->
+  <section class="about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-text">
+          <h1>About Us</h1>
+          <img class="divider" src="./img/divider.svg">
+          <p>Nori grape silver beet broccoli kombu
+            beet greens fava bean potato quandong
+            celery. Bunya nuts black-eyed
+            pea prairie turnip leek lentil turnip greens parsnip.</p>
+          <img src="./img/signature.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="row">
+        <div class="special-header">
+          <h1>Menu Cart</h1>
+          <img class="divider" src="./img/divider.svg" alt="">
+        </div>
+        <div class="menu-header">
+          <ul class="tab-bar">
+            <li id="tab-1" onclick="switchOne()">Starters</li>
+            <li id="tab-2" onclick="switchTwo()">Main Dishes</li>
+            <li id="tab-3" onclick="switchThree()">Desserts</li>
+            <li id="tab-4" onclick="switchFour()">Drinks</li>
+          </ul>
+        </div>
+        <div id="panel-1">
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SAMPHIRE FRITTERS WITH FENNEL CEVICHE</h5>
+                    <span>fresh samphire, plain flour, cornflower, eggs, fennel</span>
+                  </td>
+                  <td>
+                    <h5>$19</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>PAN FRIED COURGETTE FLOWERS</h5>
+                    <span>courgette flowers, goats cheese, red onion, pine nuts</span>
+                  </td>
+                  <td>
+                    <h5>$13</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>PAN FRIED COURGETTE FLOWERS </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$11</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>FRIED COURGETTE FLOWERS </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$16</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SAMPHIRE FRITTERS WITH FENNEL CEVICHE</h5>
+                    <span>fresh samphire, plain flour, cornflower, eggs, fennel</span>
+                  </td>
+                  <td>
+                    <h5>$19</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>PAN FRIED COURGETTE FLOWERS</h5>
+                    <span>courgette flowers, goats cheese, red onion, pine nuts</span>
+                  </td>
+                  <td>
+                    <h5>$13</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>PAN FRIED COURGETTE FLOWERS </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$11</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>FRIED COURGETTE FLOWERS </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$16</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div  id="panel-2">
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SAMPHIRE FRITTERS WITH FENNEL CEVICHE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$19</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$10</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE FENNEL CEVICHE</h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$15</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$11</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE TIADFA DJAO </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE FENNEL CEVICHE</h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$10</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$13</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE DIFA SODPFA</h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td>
+                    <h5>$19</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div  id="panel-3">
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE OASDKF</h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$10</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE DFOADLFA</h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$19</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE LALDIFA </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$18</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE ALSDFKA </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$14</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="" id="panel-4">
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>SMOKED RICOTTA TERRINE </h5>
+                    <span>shallots, cheddar, capers</span>
+                  </td>
+                  <td><h5>$12</span></h5>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-us">
+          <div class="contact-header">
+            <h1>Contact</h1>
+            <img src="./img/divider.svg" alt="">
+          </div>
+          <div class="info">
+            <div class="info-box1">
+              <h2>VEGGIE</h2>
+              <p>3428 Magnolia Avenue
+                Hackettstown, NJ 07840</p>
+            </div>
+            <div class="info-box2">
+              <h2>RESERVATIONS</h2>
+              <p>reservations@vegggie.com
+                +48 202-555-0114</p>
+            </div>
+          </div>
+          <h3>CONTACT US</h3>
+          <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="container">
+      <p>Copyright 2021 © by Su Bwae</p>
+    </div>
+  </section>
+  <a href="#home" class="top"><i class="fas fa-chevron-up"></i></a>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/663b9b744a.js" crossorigin="anonymous"></script>
+
+<!-- change text -->
+<script type="text/javascript">
+  (function () {
+    var words = [
+      "Veggie gram fava bean leek dandelion silver beet eggplant bush tomato",
+      "Dandelion cucumber earthnut pea peanut soko zucchini"
+    ], i = 0;
+    setInterval(function () {
+      $('#words').fadeOut(function () {
+        $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+      });
+    }, 3000)
+  })();
+</script>
+
+    <!-- script for scrool -->
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+  
+    </script>
+
+
+</html>
