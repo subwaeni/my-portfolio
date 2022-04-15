@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Farming</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+  rel="stylesheet">
+</head>
+
+<body>
+ <div class="header">
+  <img src="./images/logo.png" id="logo" alt="">
+  <nav>
+   <ul id="MenuItems">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#fields">FIELDS</a></li>
+    <li><a href="#contect">CONTECT</a></li>
+   </ul>
+  </nav>
+  <img src="menu.png" class="menu-icon" onclick="menutoggle()" />
+ </div>
+ <div class="main">
+  <section id="home">
+  <div class="container">
+   <div class="row">
+    <div class="col-2-small">
+     <div class="main-text">
+      <!-- <img src="./images/logo.png" class="logo" alt=""> -->
+      <h2>Download <br>Landing page for<br> Farmer & <br>Agriculture</h2>
+      <p> It is a long established fact that a reader
+       will be distracted by the readable content
+       of a page  when looking at its layout.</p>
+      <button class="btn">read more</button>
+     </div>
+    </div>
+    <div class="col-2">
+     <img src="./images/our_img1.jpg" id="images" alt="">
+    </div>
+   </div>
+  </div>
+  </section>
+
+  <section id="about">
+   <div class="container">
+    <div class="row">
+     <div class="col-2">
+      <img src="./images/about_img.jpg" id="images" alt="">
+     </div>
+     <div class="col-2-small">
+      <div class="main-text text-right">
+       <h1>About Our Farmer</h1>
+       <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as
+        opposed to using 'Content here, content here', making it look like readable English. </p>
+       <button class="btn">read more</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="fields">
+   <div class="container">
+    <div class="row">
+     <div class="col-2-small">
+      <div class="main-text">
+       <h1>Our Fields</h1>
+       <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as
+        opposed to using 'Content here, content here', making it look like readable English. </p>
+       <button class="btn">read more</button>
+      </div>
+     </div>
+     <div class="col-2">
+      <img src="./images/our_img.jpg" id="images" alt="">
+     </div>
+    </div>
+   </div>
+  </section>
+
+
+  <section>
+   <div class="container">
+    <div class="row images-left">
+     <div class="col-2 images">
+      <div class="images">
+       <img src="./images/fruit_img1.jpg" id="images" alt="">
+       <img src="./images/fruit_img2.jpg" id="images" alt="">
+      </div>
+      <div class="images">
+       <img src="./images/fruit_img3.jpg" id="images" alt="">
+       <img src="./images/fruit_img4.jpg" id="images" alt="">
+      </div>
+     </div>
+     <div class="col-2-small">
+      <div class="main-text text-right">
+       <h1>Our Fruit And Vegetables</h1>
+       <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as
+        opposed to using 'Content here, content here', making it look like readable English. </p>
+       <button class="btn">read more</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section>
+   <div class="container">
+    <div class="row">
+     <div class="col-2-small">
+      <div class="main-text">
+       <h1>Testimonial</h1>
+       <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as
+        opposed to using 'Content here, content here', making it look like readable English. </p>
+      </div>
+     </div>
+     <div class="col-2">
+      <div class="col-2-box">
+       <div class="slide-text">
+        <h3>using lorem</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+         at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+         opposed to using 'Content here, content here', making it look like readable English.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+
+  <section id="contect">
+   <div class="container">
+    <div class="row">
+     <div class="footer">
+      <h1>Let’s talk Business</h1>
+      <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking
+       at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+       letters, as
+       opposed to using 'Content here, content here', making it look like readable English. </p>
+     </div>
+    </div>
+   </div>
+   <div class="copyright">
+    <p>Copyright 2021 All Right Reserved By Free html Templates</p>
+   </div>
+  </section>
+ </div>
+
+ <script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == "0px") {
+      MenuItems.style.maxHeight = "300px";
+    } else {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+</body>
+</html>
