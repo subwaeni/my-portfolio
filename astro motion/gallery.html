@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Astro Motion-gallery</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="./video/gfp-astro-timelapse.mp4" type="video/mp4" />
+    </video>
+    <!-- header -->
+    <div class="navbar">
+      <h1><a href="index.html" class="logo">Astro Motion</a></h1>
+      <nav>
+        <ul id="MenuItems">
+          <li>
+            <a class="li-link" href="index.html">HOME</a>
+            <div class="circle"></div>
+          </li>
+          <li>
+            <a class="li-link" href="gallery.html">GALLERY</a>
+            <div class="circle"></div>
+          </li>
+          <li>
+            <a class="li-link" href="about.html">ABOUT</a>
+            <div class="circle"></div>
+          </li>
+          <li>
+            <a class="li-link" href="contact.html">CONTACT</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </nav>
+      <img src="./img/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+    </div>
+
+    <!-- main container -->
+    <div class="container">
+        <div class="circle circle-t-l-g"></div>
+        <div class="circle circle-t-r-g"></div>
+        <div class="gallery">
+        <div class="gallery-banner">
+          <div class="fig">
+            <img src="./img/gallery-img-01.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-02.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-03.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-04.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-05.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-06.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-07.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+          <div class="fig">
+            <img src="./img/gallery-img-08.jpg" class="images" alt="" />
+            <figcaption>
+              <div class="">
+                <p>Julia dances in the deep dark</p>
+              </div>
+              <a href="">View more</a>
+            </figcaption>
+          </div>
+
+      </div>
+      </div>
+      <div class="footer">
+        <p id="p">Copyright 2021 Astro Motion Company Limited. All rights reserved.</p>
+        <p>Designed by Su Bway</p>
+      </div>
+    </div>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+   
+      MenuItems.style.maxHeight ="0px";
+   
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "300px";
+        }
+        else{
+          MenuItems.style.maxHeight="0px";
+        }
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Astro Motion</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="./video/gfp-astro-timelapse.mp4" type="video/mp4" />
+    </video>
+    <!-- header -->
+    <div class="navbar">
+      <h1><a href="index.html" class="logo">Astro Motion</a></h1>
+      <nav>
+        <ul id="MenuItems">
+          <li>
+            <a class="li-link" href="index.html">HOME</a>
+            <div class="circle"></div>
+          </li>
+          <li>
+            <a class="li-link" href="gallery.html">GALLERY</a>
+            <div class="circle"></div>
+          </li>
+          <li>
+            <a class="li-link" href="about.html">ABOUT</a>
+            <div class="circle"></div>
+          </li>
+          <li>
+            <a class="li-link" href="contact.html">CONTACT</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </nav>
+      <img src="./img/menu.png" class="menu-icon"  onclick="menutoggle()"alt="" />
+    </div>
+
+    <!-- main container -->
+    <div class="container">
+      <div class="row">
+        <div class="circle circle-1"></div>
+        <div class="banner">
+          <div class="text-box">
+            <h1>Welcome to Astro Motion</h1>
+            <p>
+              This HTML template has a motion video background loop which is
+              provided by <span><a href="">Get Free Pictures</a></span
+              >. This is one-page responsive layout for your websites. Feel free
+              to use this for a commercial purpose. You are not permitted to
+              redistribute this template on your Free CSS collection websites.
+              Please <span><a href="">contact us</a></span> for more
+              information.
+            </p>
+          </div>
+          <div class="banner-img">
+            <img
+              src="./img/home-img-1.jpg"
+              height="220px"
+              width="260px"
+              alt=""
+            />
+            <img
+              src="./img/home-img-2.jpg"
+              height="230px"
+              width="260px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="circle circle-2"></div>
+        <a href="" class="btn">View More</a>
+      </div>
+      <div class="footer">
+        <p id="p">Copyright 2021 Astro Motion Company Limited. All rights reserved.</p>
+        <p >Designed by Su Bway</p>
+      </div>
+    </div>
+
+    <!-- script for menu -->
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+ 
+    MenuItems.style.maxHeight ="0px";
+ 
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "300px";
+      }
+      else{
+        MenuItems.style.maxHeight="0px";
+      }
+    }
+  </script>
+  </body>
+</html>
