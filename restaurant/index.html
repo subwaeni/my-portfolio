@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Restaurant</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="nav">
+      <img src="./images/klassy-logo.png" alt="">
+      <ul id="MenuItems">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#chefs">Chefs</a></li>
+        <li class="features">
+          <a href="#features" class="dropbtn">Features <i class="fas fa-angle-down"></i></a>
+          <div class="features-content">
+            <a href="#">Features 1</a>
+            <a href="#">Features 1</a>
+            <a href="#">Features 1</a>
+            <a href="#">Features 1</a>
+          </div>
+        </li>
+        <li><a href="#cantact-us">Contact Us</a></li>
+      </ul>
+    </nav>
+    <i class="fas fa-bars menu-icon" onclick="menutoggle()"></i>
+  </div>
+
+  <!-- hero section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="left-col">
+        <div class="sub-header">
+          <h1> KlassyCafe</h1>
+          <h3>THE BEST EXPERIENCE</h3>
+          <button class="btn">Make A Reservation</button>
+        </div>
+      </div>
+      <div class="right-col">
+        <img src="images/slide-02.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- about us section -->
+  <section class="about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="about-us-text">
+            <span>ABOUT US</span>
+            <h2>We leave A Delicious<br> Memory For You</h2>
+            <p>Klassy Cafe is one of the best <a>restaurant HTML templates </a> with Bootstrap v4.5.2 CSS framework. You
+              can
+              download
+              and feel free to use this website template layout for your restaurant business. You are allowed to use
+              this
+              template for commercial purposes.</p>
+            <br>
+            <p>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please
+              contact us
+              for more information.</p>
+          </div>
+          <div class="about-us-img">
+            <img src="./images/about-thumb-01.jpg" alt="">
+            <img src="./images/about-thumb-02.jpg" alt="">
+            <img src="./images/about-thumb-03.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-2">
+          <i class="fas fa-play-circle"></i>
+          <img src="./images/about-video-bg.jpg" id="video-img" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <span>OUR MENU</span>
+          <h2>Our selection of cakes<br> with quality taste</h2>
+        </div>
+      </div>
+      <div class="menu-box">
+        <div class="col-5">
+          <img src="./images/menu-item-01.jpg" alt="">
+          <h1>$14</h1>
+
+          <div class="overlay">
+            <div class="overlay-text">
+              <h4>Classic cake</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <img src="./images/menu-item-02.jpg" alt="">
+          <h1>$14</h1>
+
+          <div class="overlay">
+            <div class="overlay-text">
+              <h4>Classic cake</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolor quia, mollitia voluptates
+                fugiat
+                ducimus blanditiis quod deserunt?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <img src="./images/menu-item-03.jpg" alt="">
+          <h1>$14</h1>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h4>Classic cake</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolor quia, mollitia voluptates
+                fugiat
+                ducimus blanditiis quod deserunt?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <img src="./images/menu-item-04.jpg" alt="">
+          <h1>$14</h1>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h4>Classic cake</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolor quia, mollitia voluptates
+                fugiat
+                ducimus blanditiis quod deserunt?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <img src="./images/menu-item-05.jpg" alt="">
+          <h1>$14</h1>
+
+          <div class="overlay">
+            <div class="overlay-text">
+              <h4>Classic cake</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolor quia, mollitia voluptates
+                fugiat
+                ducimus blanditiis quod deserunt?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- chefs section -->
+  <section class="chefs" id="chefs">
+    <div class="container">
+      <div class="title">
+        <span>ABOUT CHEFS</span>
+        <h2>We offer the best <br> ingredients for you</h2>
+      </div>
+      <div class="row">
+        <div class="chefs-box">
+          <div class="col-3">
+            <img src="./images/chefs-01.jpg" alt="">
+            <div class="overlay">
+              <div class="overlay-icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+              </div>
+            </div>
+            <div class="chef-text">
+              <h3>Randay Walker</h3>
+              <p>Pastry Chef</p>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <img src="./images/chefs-02.jpg" alt="">
+            <div class="overlay">
+              <div class="overlay-icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+              </div>
+            </div>
+            <div class="chef-text">
+              <h3>Randay Walker</h3>
+              <p>Pastry Chef</p>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <img src="./images/chefs-03.jpg" alt="">
+            <div class="overlay">
+              <div class="overlay-icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+              </div>
+            </div>
+            <div class="chef-text">
+              <h3>Randay Walker</h3>
+              <p>Pastry Chef</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact Us sections -->
+  <section class="contact-us" id="cantact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="title">
+            <span>CONTANCT US</span>
+            <h2>Here You Can Make A Reservation<br> Or Just walkin to our cafe</h2>
+            <P>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin
+              urna diam, sed commodo purus porta ut.</P>
+          </div>
+          <div class="contact-box">
+            <div class="info-box">
+              <i class="fas fa-phone"></i>
+              <h3>Phone Numbers</h3>
+              <p>097-788-138-86</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-envelope"></i>
+              <h3>Emails</h3>
+              <p>info@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="form">
+            <h2>Table Reservation</h2>
+            <form action="">
+              <input type="name" placeholder="Your Name*" required>
+              <input type="email" placeholder="Your Email Adress">
+              <input type="text" placeholder="Phone Number" required>
+              <input type="number" placeholder="Number of Gurests">
+              <input type="date" placeholder="dd/mm/yy">
+              <select name="Time" id="Time">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+              </select>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+              <button class="btn btn2"> Make A Reservation</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- offers -->
+  <section class="offers" id="offers">
+    <div class="container">
+      <div class="title">
+        <span>KLASSY WEEK</span>
+        <h2>This Week's Special <br>Meal Offers</h2>
+      </div>
+      <div class="tag-icons">
+        <ul>
+          <li class="li active" data-filter="breakfast">
+            <a href="#Breakfast">
+              <img src="./images/tab-icon-01.png" alt="">
+              <p>Breakfast</p>
+            </a>
+          </li>
+          <li class="li" data-filter="lunch"><a href="#Lunch">
+              <img src="./images/tab-icon-02.png" alt="">
+              <p>Lunch</p>
+            </a>
+          </li>
+          <li class="li" data-filter="dinner"><a href="#Dinner">
+              <img src="./images/tab-icon-03.png" alt="">
+              <p>Dinner</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h3 id="Breakfast">Breakfast</h3>
+      <div class="row">
+        <div class="col-2">
+          <div class="portfolio breakfast">
+            <img src="./images/tab-item-01.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio breakfast">
+            <img src="./images/tab-item-02.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio breakfast">
+            <img src="./images/tab-item-03.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="portfolio breakfast">
+            <img src="./images/tab-item-04.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio breakfast">
+            <img src="./images/tab-item-05.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio breakfast">
+            <img src="./images/tab-item-06.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+        </div>
+      </div>
+      <h3 id="Lunch">Lunch</h3>
+      <div class="row">
+        <div class="col-2 ">
+          <div class="portfolio lunch">
+            <img src="./images/tab-item-01.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio lunch">
+            <img src="./images/tab-item-03.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio lunch">
+            <img src="./images/tab-item-04.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="portfolio lunch">
+            <img src="./images/tab-item-02.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio lunch">
+            <img src="./images/tab-item-06.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio lunch">
+            <img src="./images/tab-item-05.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+        </div>
+      </div>
+      <h3 id="Dinner">Dinner</h3>
+      <div class="row">
+        <div class="col-2">
+          <div class="portfolio dinner">
+            <img src="./images/tab-item-06.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio dinner">
+            <img src="./images/tab-item-05.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio dinner">
+            <img src="./images/tab-item-04.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="portfolio dinner">
+            <img src="./images/tab-item-03.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio dinner">
+            <img src="./images/tab-item-02.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+          <div class="portfolio dinner">
+            <img src="./images/tab-item-01.png" alt="">
+            <div class="portfolio-text">
+              <h4>Fresh Chicken Salad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+            </div>
+            <h5>$10.50</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="row">
+      <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+      <div class="logo">
+        <img src="./images/white-logo.png" alt="">
+      </div>
+      <div class="copyright">
+        <p>&#169; copyright bwae Co.<br> Design by Su Bway.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/663b9b744a.js" crossorigin="anonymous"></script>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "1000px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+
+  </script>
+
+  <!-- script for scrool -->
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true,
+    });
+
+  </script>
+
+
+  <!-- jquery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.li').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == '.breakfast') {
+          $('.breakfast').show('1000');
+        } else {
+          $('.breakfast').not('.' + value).hide('1000');
+          $('.breakfast').filter('.' +value).show('1000');
+        }
+      })
+      $('.li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+    })
+  </script> -->
+
+</body>
+
+</html>
